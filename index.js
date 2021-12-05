@@ -10,9 +10,9 @@ const port = process.env.PORT || 5000
 // doctors-portal-firebase-adminsdk.json
 
 
-// var serviceAccount = require('./doctors-portal-firebase-adminsdk.json');
+var serviceAccount = require('./doctors-portal-firebase-adminsdk.json');
 // var serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+// const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
